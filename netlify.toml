@@ -1,5 +1,5 @@
 [build]
-publish = "nbaztec/public"
+publish = "public"
 command = "hugo --baseURL $URL"
 
 [build.environment]
