@@ -11,17 +11,20 @@ enableEmoji = true
 # Enable Disqus comments
 # disqusShortname = "yourdiscussshortname"
 
+[markup.goldmark.renderer]
+unsafe= true
+
 [params]
 author = "Nisheeth Barthwal"
 description = "Nisheeth Barthwal's personal website"
 keywords = "blog,developer,personal"
 info = ["Software Engineer"]
-avatarURL = "images/avatar.jpg"
+avatarURL = "images/me.jpg"
 #gravatar = "nbaztec@gmail.com"
 dateFormat = "January 2, 2006"
 since = 2022
 # Git Commit in Footer, uncomment the line below to enable it
-commit = "https://github.com/nbaztec/nbaztec/tree/"
+commit = "https://github.com/nbaztec/nbaztec/"
 # Right To Left, shift content direction for languagues such as Arabic
 rtl = false
 # Specify light/dark colorscheme
@@ -35,11 +38,14 @@ hideColorSchemeToggle = false
 # Series see also post count
 maxSeeAlsoItems = 5
 # Custom CSS
-customCSS = []
+customCSS = [ "/css/override.css" ]
 # Custom SCSS, file path is relative to Hugo's asset folder (default: {your project root}/assets)
 customSCSS = []
 # Custom JS
 customJS = []
+favicon_32 = "images/nb.png"
+favicon_16 = "images/nb.png"
+touchicon = "images/nb.png"
 
 # If you want to use fathom(https://usefathom.com) for analytics, add this section
 # [params.fathomAnalytics]
@@ -71,7 +77,7 @@ customJS = []
 # If you want to implement a Content-Security-Policy, add this section
 [params.csp]
 childsrc = ["'self'"]
-fontsrc = ["'self'", "https://fonts.gstatic.com", "https://cdn.jsdelivr.net/"]
+fontsrc = ["'self'", "https://fonts.gstatic.com", "https://cdn.jsdelivr.net/", "https://kit.fontawesome.com", "https://ka-f.fontawesome.com"]
 formaction = ["'self'"]
 framesrc = ["'self'"]
 imgsrc = ["'self'"]
@@ -82,10 +88,10 @@ stylesrc = [
   "https://fonts.googleapis.com/",
   "https://cdn.jsdelivr.net/"
 ]
-scriptsrc = ["'self'", "'unsafe-inline'", "https://www.google-analytics.com"]
+scriptsrc = ["'self'", "'unsafe-inline'", "https://www.google-analytics.com", "https://kit.fontawesome.com", "https://ka-f.fontawesome.com"]
 prefetchsrc = ["'self'"]
 # connect-src directive – defines valid targets for to XMLHttpRequest (AJAX), WebSockets or EventSource
-connectsrc = ["'self'", "https://www.google-analytics.com"]
+connectsrc = ["'self'", "https://www.google-analytics.com", "https://kit.fontawesome.com", "https://ka-f.fontawesome.com"]
 
 [taxonomies]
 category = "categories"
@@ -111,6 +117,66 @@ icon = "fa fa-2x fa-medium"
 weight = 5
 url = "https://medium.com/@nbaztec"
 
+[[params.programming.0]]
+name = "Golang"
+icon = "devicon-go-original-wordmark colored"
+weight = 1
+
+[[params.programming.0]]
+name = "Rust"
+icon = "devicon-rust-plain colored"
+weight = 2
+
+[[params.programming.0]]
+name = "NodeJS"
+icon = "devicon-nodejs-plain colored"
+weight = 3
+
+[[params.programming.0]]
+name = "Typescript"
+icon = "devicon-typescript-plain colored"
+weight = 4
+hide = true
+
+[[params.programming.0]]
+name = "Kotlin"
+icon = "devicon-kotlin-plain colored"
+image = "images/logos/kotlin.svg"
+weight = 5
+hide = true
+
+[[params.programming.0]]
+name = "Angular"
+icon = "devicon-angularjs-plain colored"
+weight = 6
+
+[[params.programming.1]]
+name = "AWS"
+icon = "devicon-amazonwebservices-plain-wordmark colored"
+image = "images/logos/aws.svg"
+weight = 1
+
+[[params.programming.1]]
+name = "Google Cloud"
+image = "images/logos/gcp.svg"
+weight = 1
+
+[[params.programming.1]]
+name = "Kubernetes"
+icon = "devicon-kubernetes-plain colored"
+weight = 1
+
+[[params.programming.1]]
+name = "etcd"
+image = "images/logos/etcd.svg"
+weight = 1
+hide = true
+
+[[params.programming.1]]
+name = "Prometheus"
+image = "images/logos/prometheus.png"
+weight = 1
+
 
 [languages.en]
 languageName = ":uk:"
@@ -121,17 +187,8 @@ weight = 1
 url = "about/"
 
 [[languages.en.menu.main]]
-name = "Blog"
+name = "Resume"
 weight = 2
-url = "posts/"
-
-[[languages.en.menu.main]]
-name = "Projects"
-weight = 3
-url = "projects/"
-
-[[languages.en.menu.main]]
-name = "Contact me"
-weight = 5
-url = "contact/"
-
+url = "resume/"
+[languages.en.menu.main.params]
+newTarget = false

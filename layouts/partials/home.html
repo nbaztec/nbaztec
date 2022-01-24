@@ -1,12 +1,12 @@
 <section class="container centered">
   <div class="about">
     {{ if and (isset .Site.Params "avatarurl") (not (isset .Site.Params "gravatar")) }}
-      {{ with .Site.Params.avatarURL }}
-        <div class="avatar"><img src="{{ . | relURL }}" alt="avatar"></div>
-      {{ end }}
+    {{ with .Site.Params.avatarURL }}
+    <div class="avatar"><img src="{{ . | relURL }}" alt="avatar"></div>
+    {{ end }}
     {{ end }}
     {{ with .Site.Params.gravatar }}
-      <div class="avatar"><img src="https://www.gravatar.com/avatar/{{md5 .}}?s=240&d=mp" alt="gravatar"></div>
+    <div class="avatar"><img src="https://www.gravatar.com/avatar/{{md5 .}}?s=240&d=mp" alt="gravatar"></div>
     {{ end }}
     <h1>{{ .Site.Params.author }}</h1>
     {{ if reflect.IsSlice .Site.Params.info }}
@@ -17,19 +17,48 @@
     {{ with .Site.Params.social }}
     <ul>
       {{ range sort . "weight" }}
-        {{ if .icon }}
-          <li>
-            <a href="{{ .url | safeURL }}" aria-label="{{ .name }}" {{ if .rel }}rel="{{ .rel }}"{{ end }} {{ if .target }}target="{{ .target }}"{{ end }} {{ if .type }}type="{{ .type }}"{{ end }}>
-              <i class="{{ .icon }}" aria-hidden="true"></i>
-            </a>
-          </li>
-        {{ else }}
-          <li>
-            <a href="{{ .url | safeURL }}" aria-label="{{ .name }}" {{ if .rel }}rel="{{ .rel }}"{{ end }} {{ if .target }}target="{{ .target }}"{{ end }}>{{ .name }}</a>
-          </li>
-        {{ end }}
+      {{ if .icon }}
+      <li>
+        <a href="{{ .url | safeURL }}" aria-label="{{ .name }}" {{ if .rel }}rel="{{ .rel }}" {{ end }} {{ if .target
+          }}target="{{ .target }}" {{ end }} {{ if .type }}type="{{ .type }}" {{ end }}>
+          <i class="{{ .icon }}" aria-hidden="true"></i>
+        </a>
+      </li>
+      {{ else }}
+      <li>
+        <a href="{{ .url | safeURL }}" aria-label="{{ .name }}" {{ if .rel }}rel="{{ .rel }}" {{ end }} {{ if .target
+          }}target="{{ .target }}" {{ end }}>{{ .name }}</a>
+      </li>
+      {{ end }}
       {{ end }}
     </ul>
     {{ end }}
+
+    {{ with .Site.Params.programming }}
+    <hr />
+
+    <section class="programming">
+      <small>programming with &hearts; and</small>
+
+      <ul>
+      {{ range $group, $items := . }}
+        {{ range sort $items "weight" }}
+          {{ if not .hide }}
+            {{ if .image }}
+            <li>
+              <img class="programming" src="{{ .image }}" alt="{{ .name }}" title="{{ .name }}" />
+            </li>
+            {{ else }}
+            <li>
+              <i class="programming {{ .icon }}" aria-hidden="true" title="{{ .name }}"></i>
+            </li>
+            {{ end }}
+          {{ end }}
+        {{ end }}
+        <br />
+      {{ end }}
+      </ul>
+  </section>
+  {{ end }}
   </div>
 </section>
