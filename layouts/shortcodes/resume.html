@@ -1,0 +1,320 @@
+{{ $pretty := not .Page.Params.layout_raw }}
+
+<section>
+    <div class="header">
+        <div>
+            <img src="/images/me.jpg" />
+            <div class="name">Nisheeth Barthwal</div>
+            <div class="title">Senior Software Engineer</div>
+        </div>
+        <div class="h-row">
+            <div class="h-col-1">
+                <div><i class="fas fa-phone-square-alt"></i> +49-15207119720</div>
+                <div><i class="far fa-envelope"></i> nbaztec@gmail.com</div>
+                <div><i class="fas fa-map-marker-alt"></i>&nbsp; Hamburg, Germany</div>
+            </div>
+            <div class="h-col-2">
+                <div><i class="fab fa-github"></i> <a href="https://github.com/nbaztec">github.com/nbaztec</a></div>
+                <div><i class="fab fa-linkedin"></i> <a
+                        href="https://in.linkedin.com/in/nbaztec">in.linkedin.com/in/nbaztec</a></div>
+            </div>
+        </div>
+    </div>
+    <hr />
+    <div>
+        <div class="col-1">Profile</div>
+        <div class="col-2">
+            Experienced Software Engineer with focus on automation, quality and people. Proficient in various languages
+            and tools, with
+            the ability to self-manage on projects and swiftly pick upon new technologies.
+        </div>
+    </div>
+    <hr />
+    <div>
+        <div class="col-1">Skills</div>
+        <div class="col-2">
+            <div class="skill-row">
+               
+                <span class="skill-wrap {{ if $pretty }}big{{end}}"><span class="skill">{{ if $pretty }}<i class="devicon-go-original-wordmark colored prog-icon"></i>{{ end }}Go</span></span>
+                <span class="skill-wrap {{ if $pretty }}big{{end}}"><span class="skill">{{ if $pretty }}<i class="devicon-rust-plain colored prog-icon"></i>{{ end }}Rust</span></span>
+                <span class="skill-wrap {{ if $pretty }}big{{end}}"><span class="skill">{{ if $pretty }}<i class="devicon-nodejs-plain colored prog-icon"></i>{{ end }}NodeJS</span></span>
+                <span class="skill-wrap {{ if $pretty }}big{{end}}"><span class="skill">{{ if $pretty }}<i class="devicon-csharp-plain colored prog-icon"></i>{{ end }}C#</span></span>
+            </div>
+            <div class="skill-soft-row">
+                <span class="skill-wrap {{ if $pretty }}big{{end}}"><span class="skill">{{ if $pretty }}<i class="devicon-python-plain colored prog-icon"></i>{{ end }}Python</span></span>
+                <span class="skill-wrap {{ if $pretty }}big{{end}}"><span class="skill">{{ if $pretty }}<i class="devicon-angularjs-plain colored prog-icon"></i>{{ end }}Angular</span></span>
+            </div>
+            <div class="skill-row-mt">
+                <span class="skill-wrap {{ if $pretty }}big{{end}}"><span class="skill">etcd</span></span>
+                <span class="skill-wrap {{ if $pretty }}big{{end}}"><span class="skill">Prometheus</span></span>
+                <span class="skill-wrap {{ if $pretty }}big{{end}}"><span class="skill">{{ if $pretty }}<i class="devicon-postgresql-plain colored prog-icon"></i>{{ end }}Postgres</span></span>
+                <span class="skill-wrap {{ if $pretty }}big{{end}}"><span class="skill">Elasticsearch</span></span>
+            </div>
+            <div class="skill-soft-row">
+                <span class="skill-wrap {{ if $pretty }}big{{end}}"><span class="skill">{{ if $pretty }}<i class="devicon-redis-plain colored prog-icon"></i>{{ end }}Redis</span></span>
+                <span class="skill-wrap {{ if $pretty }}big{{end}}"><span class="skill">{{ if $pretty }}<i class="devicon-mongodb-plain colored prog-icon"></i>{{ end }}MongoDB</span></span>
+            </div>
+            <div class="skill-row-mt">
+                <span class="skill-wrap {{ if $pretty }}big{{end}}"><span class="skill">{{ if $pretty }}<i class="devicon-kubernetes-plain colored prog-icon"></i>{{ end }}Kubernetes</span></span>
+                <span class="skill-wrap {{ if $pretty }}big{{end}}"><span class="skill">{{ if $pretty }}<i class="devicon-docker-plain colored prog-icon"></i>{{ end }}Docker</span></span>
+                <span class="skill-wrap {{ if $pretty }}big{{end}}"><span class="skill">Terraform</span></span>
+                <span class="skill-wrap {{ if $pretty }}big{{end}}"><span class="skill">{{ if $pretty }}<i class="devicon-amazonwebservices-plain colored prog-icon"></i>{{ end }}AWS</span></span>
+            </div>
+        </div>
+    </div>
+    <hr />
+    <div class="experience">
+        <div class="col-1">Experience</div>
+        <div class="col-2"></div>
+    </div>
+    <div class="experience-item">
+        <div class="col-1">
+            <div class="experience-date">Sep 2019 &mdash; Current</div>
+        </div>
+        <div class="col-2">
+            <div>
+                <span class="experience-role">Cloud Native Software Engineer</span>
+                <span class="experience-company"><a href="https://moia.io">MOIA</a> <small
+                        class="experience-location">Hamburg, Germany</small></span>
+            </div>
+            <div class="experience-summary">
+                <div>
+                    <span>&dot;</span>
+                    <div class="experience-summary-row"><em>Optimize</em> fleet routes on distributed, highly available
+                        <em>Go</em> and <em>Rust</em> (previously Kotlin) components in ride-sharing domain
+                    </div>
+                </div>
+                <div>
+                    <span>&dot;</span>
+                    <div class="experience-summary-row">Participate in architecture designs and follow-up
+                        implementations, like <em>Protobuf</em>, <em>gRPC</em>, and <em>etcd</em> leader consensus</div>
+                </div>
+                <div>
+                    <span>&dot;</span>
+                    <div class="experience-summary-row">Automate test and deployment pipelines on <em>Github
+                            Actions</em> and <em>Kubernetes</em></div>
+                </div>
+                <div>
+                    <span>&dot;</span>
+                    <div class="experience-summary-row">Manage Observability stack on <em>Prometheus</em>,
+                        <em>Grafana</em> and <em>Kibana</em>
+                    </div>
+                </div>
+                <div>
+                    <span>&dot;</span>
+                    <div class="experience-summary-row"><em>Mentor</em> junior developers on sound engineering
+                        principles and assist team in harboring active <em>conflict resolution</em> strategies</div>
+                </div>
+                <div>
+                    <span>&dot;</span>
+                    <div class="experience-summary-row">Responsible for inter-team communication and intra-team decision
+                        <em>facilitation</em> (Technical Designer role).
+                    </div>
+                </div>
+                <div>
+                    <span>&dot;</span>
+                    <div class="experience-summary-row">Contribute to Go, Rust and Kotlin <em>open source</em> plugins
+                        and libraries</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="experience-item">
+        <div class="col-1">
+            <div class="experience-date">Jun 2017 &mdash; Sep 2019</div>
+        </div>
+        <div class="col-2">
+            <div>
+                <span class="experience-role">Senior Software Engineer</span>
+                <span class="experience-company"><a href="https://www.carnect.com/">Carnect</a> <small
+                        class="experience-location">Hamburg, Germany</small></span>
+            </div>
+            <div class="experience-summary">
+                <div>
+                    <span>&dot;</span>
+                    <div class="experience-summary-row">Migrate B2B monolith to microservice architecture using
+                        <em>NodeJS</em> and <em>.NET Core / C#</em> in Car Rental industry
+                    </div>
+                </div>
+                <div>
+                    <span>&dot;</span>
+                    <div class="experience-summary-row">Participate in architecture design and CI/CD pipelines
+                        (<em>Teamcity</em>)</div>
+                </div>
+                <div>
+                    <span>&dot;</span>
+                    <div class="experience-summary-row">Setup <em>Kubernetes</em> cluster on AWS with infra team via
+                        <em>Terraform</em>
+                    </div>
+                </div>
+                <div>
+                    <span>&dot;</span>
+                    <div class="experience-summary-row">Lead internal projects and mentor front-end team on
+                        <em>Angular</em>
+                    </div>
+                </div>
+                <div>
+                    <span>&dot;</span>
+                    <div class="experience-summary-row">Contribute to .NET Core, Docker and Terraform <em>open
+                            source</em> repositories</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="experience-item">
+        <div class="col-1">
+            <div class="experience-date">Dec 2016 &mdash; Jun 2017</div>
+        </div>
+        <div class="col-2">
+            <div>
+                <span class="experience-role">Software Engineer</span>
+                <span class="experience-company"><a
+                        href="https://www.hermesworld.com/de/ueber-uns/hermes-gruppe/borderguru/">BorderGuru <small
+                            class="experience-location">Hamburg, Germany</small></a></span>
+            </div>
+            <div class="experience-summary">
+                <div>
+                    <span>&dot;</span>
+                    <div class="experience-summary-row">Develop REST APIs in <em>NodeJS</em> in Logistics domain</div>
+                </div>
+                <div>
+                    <span>&dot;</span>
+                    <div class="experience-summary-row">Participate in <em>architecture design</em> and <em>test</em>
+                        automation/coverage</div>
+                </div>
+                <div>
+                    <span>&dot;</span>
+                    <div class="experience-summary-row">Develop internal <em>Selenium</em> and <em>Elasticsearch</em>
+                        project for data crawling</div>
+                </div>
+                <div>
+                    <span>&dot;</span>
+                    <div class="experience-summary-row">Participate in interview and <em>hiring</em> process and mentor
+                        junior team members</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="experience-item">
+        <div class="col-1">
+            <div class="experience-date">Mar 2016 &mdash; Dec 2016</div>
+        </div>
+        <div class="col-2">
+            <div>
+                <span class="experience-role">Platform Engineer and Strategist</span>
+                <span class="experience-company"><a href="https://www.cloudaccess.net/">CloudAccess</a> <small
+                        class="experience-location">Remote (Poland/US)</small></span>
+            </div>
+            <div class="experience-summary">
+                <div>
+                    <span>&dot;</span>
+                    <div class="experience-summary-row">Develop support ticket analyzer and concurrent mass email tool
+                        in <em>NodeJS</em>, <em>Go</em> and <em>ReactJS</em> in PaaS domain</div>
+                </div>
+                <div>
+                    <span>&dot;</span>
+                    <div class="experience-summary-row">Improve log search performance in legacy MySQL database via
+                        <em>Elasticsearch</em>
+                    </div>
+                </div>
+                <div>
+                    <span>&dot;</span>
+                    <div class="experience-summary-row">Manage a team of three engineers, working closely with Front-end
+                        and System engineers</div>
+                </div>
+                <div>
+                    <span>&dot;</span>
+                    <div class="experience-summary-row">Participate actively in stategic management decisions on
+                        improving the platform/product</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="experience-item">
+        <div class="col-1">
+            <div class="experience-date">Jun 2013 &mdash; Mar 2016</div>
+        </div>
+        <div class="col-2">
+            <div>
+                <span class="experience-role">Platform Engineer</span>
+                <span class="experience-company"><a href="https://www.cloudaccess.net/">CloudAccess</a> <small
+                        class="experience-location">Remote (Poland/US)</small></span>
+            </div>
+            <div class="experience-summary">
+                <div>
+                    <span>&dot;</span>
+                    <div class="experience-summary-row">Develop, refactor and maintain core platform <em>Python</em>
+                        service in PaaS domain and secure websocket communication with OAuth2 and SSL/TLS </div>
+                </div>
+                <div>
+                    <span>&dot;</span>
+                    <div class="experience-summary-row">
+                        Develop minimal <em>PHP</em> MVC framework based on <em>CodeIgniter</em> for the proprietary
+                        customer control panel,
+                        <em>phantomJS</em> based page-load analysis feature and downtime notifications via
+                        <em>Redis</em> and <em>nginx</em>
+                    </div>
+                </div>
+                <div>
+                    <span>&dot;</span>
+                    <div class="experience-summary-row">Build automation tools for CMS deployments (Joomla! and
+                        Wordpress)</div>
+                </div>
+                <div>
+                    <span>&dot;</span>
+                    <div class="experience-summary-row">Participate in requirement elicitation and strategic feature
+                        planning with the Operations team</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="experience-item">
+        <div class="col-1">
+            <div class="experience-date">Jun 2012 &mdash; Jun 2013</div>
+        </div>
+        <div class="col-2">
+            <div>
+                <span class="experience-role">Product Developer and Strategist</span>
+                <span class="experience-company"><a href="https://www.mediazo.com/">MediaZo</a> <small
+                        class="experience-location">India</small></span>
+            </div>
+            <div class="experience-summary">
+                <div>
+                    <span>&dot;</span>
+                    <div class="experience-summary-row">
+                        Develop and design online reputation manager with <em>PHP</em>, <em>Javascript</em> and
+                        <em>MongoDB</em> for managing
+                        social media interactions on Facebook, Twitter and LinkedIn for B2B customers
+                    </div>
+                </div>
+                <div>
+                    <span>&dot;</span>
+                    <div class="experience-summary-row">
+                        Manage Linux servers, SSL certificates, git deployments and third-party payment gateway
+                        integrations
+                    </div>
+                </div>
+                <div>
+                    <span>&dot;</span>
+                    <div class="experience-summary-row">Develop and maintain internal projects on AGILE methodologies
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr />
+    <div class="academic">
+        <div class="col-1">Academic Profile</div>
+        <div class="col-2"></div>
+    </div>
+    <div class="academic-item">
+        <div class="col-1 academic-date">2009 - 2013</div>
+        <div class="col-2a">
+            <div class="academic-title">Bachelor of Technology (Computer Science)</div>
+            <div class="academic-university">Guru Gobind Singh Indraprastha University, India</div>
+        </div>
+        <div class="col-2b academic-grade">
+            83.90%
+        </div>
+    </div>
+</section>
