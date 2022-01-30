@@ -1,201 +1,248 @@
 /* A4 @ 72dpi: 595 X 842 pixels. */
 body {
-    margin: 20px auto;
-    font-family: 'Noto Sans JP', sans-serif;
-    width: 900px;
-    min-height: 1000px;
-    text-align: justify;
-  }
+  margin: 20px auto;
+  font-family: 'Noto Sans JP', sans-serif;
+  width: 900px;
+  min-height: 1000px;
+  text-align: justify;
+}
 
-  div {
-    vertical-align: top;
-    /* border: 1px solid gray; */
-    margin: 0;
-    padding: 0;
-  }
+div {
+  vertical-align: top;
+  /* border: 1px solid gray; */
+  margin: 0;
+  padding: 0;
+}
 
-  a {
-    color: inherit;
-    text-decoration: inherit;
-    font-weight: 300;
-  }
+a {
+  color: inherit;
+  text-decoration: inherit;
+  font-weight: 300;
+}
 
-  hr {
-    border: 0.1px solid #D6EAF8;
-    border-radius: 5px;
-    margin: 15px 0;
-  }
+hr {
+  border: 0.1px solid #D6EAF8;
+  border-radius: 5px;
+  margin: 15px 0;
+}
 
-  i {
-    color: #2E86C1;
-  }
+i {
+  color: #2E86C1;
+}
 
-  em {
-    font-style: normal;
-    font-weight: 400;
-  }
+em {
+  font-style: normal;
+  font-weight: 400;
+}
 
-  img {
-    float: left;
-    width: 130px;
-    border-radius: 50%;
-    margin-right: 75px;
-  }
+img.profile {
+  float: left;
+  width: 130px;
+  border-radius: 50%;
+  margin-right: 75px;
+}
 
-  .col-1 {
-    display: inline-block;
-    width: 29.3%;
-    font-size: large;
-    font-weight: 700;
-  }
+.col-1 {
+  display: inline-block;
+  width: 29.3%;
+  font-size: large;
+  font-weight: 700;
+}
 
-  .col-2 {
-    display: inline-block;
-    width: 69.3%;
-  }
+.col-2 {
+  display: inline-block;
+  width: 69.3%;
+}
 
-  .col-2a {
-    display: inline-block;
-    width: 59.3%;
-  }
+.col-2a {
+  display: inline-block;
+  width: 59.3%;
+}
 
-  .col-2b {
-    display: inline-block;
-    width: 9.3%;
-    font-weight: 200;
-  }
+.col-2b {
+  display: inline-block;
+  width: 9.3%;
+  font-weight: 200;
+}
 
-  .h-row {
-    margin: 20px 0 10px 0;
-    font-size: small;
-    font-weight: 200;
-  }
+.h-row {
+  margin: 20px 0 10px 0;
+  font-size: small;
+  font-weight: 200;
+}
 
-  .h-col-1 {
-    display: inline-block;
-    width: 40.3%;
-  }
+.h-col-1 {
+  display: inline-block;
+  width: 40.3%;
+}
 
-  .h-col-2 {
-    display: inline-block;
-    margin-top: 20px;
-    width: 29.3%;
-  }
+.h-col-2 {
+  display: inline-block;
+  width: 29.3%;
+}
 
-  .name {
-    font-size: x-large;
-    font-weight: 600;
-  }
+.name {
+  font-size: x-large;
+  font-weight: 600;
+}
 
-  .title {
-    font-size: medium;
-    font-weight: 100;
-    color: #2E86C1
-  }
+.title {
+  font-size: medium;
+  font-weight: 100;
+  color: #2E86C1
+}
 
-  .skill-soft-row {
-    margin-top: 5px;
-    display: block;
-  }
+.skill-soft-row {
+  margin-top: 5px;
+  display: block;
+}
 
-  .skill-row {
-    display: block;
-  }
+.skill-row {
+  display: block;
+}
 
-  .skill-row-mt {
-    display: block;
-    margin-top: 15px;
-  }
+.skill-row-mt {
+  display: block;
+  margin-top: 15px;
+}
 
-  .skill-wrap {
-    width: 100px;
-    margin-right: 10px;
-    display: inline-block;
-  }
+.skill-wrap {
+  width: 100px;
+  margin-right: 10px;
+  display: inline-block;
+}
 
-  .skill-wrap.big {
-    width: 120px;
-  }
+.skill-wrap.big {
+  width: 140px;
+}
 
-  .skill-wrap-2 {
-    width: 100px;
-    margin-right: 10px;
-    display: inline-block;
-  }
+.skill-wrap-2 {
+  width: 100px;
+  margin-right: 10px;
+  display: inline-block;
+}
 
-  .skill {
-    display: inline-block;
-    padding: 2px;
-    border-bottom: 0.5px dashed #21618C;
-  }
+.skill {
+  display: inline-block;
+  padding: 2px;
+  border-bottom: 0.5px dashed #21618C;
+}
 
-  .experience {
-    margin-bottom: 20px;
-  }
+.experience {
+  margin-bottom: 20px;
+}
 
-  .experience-item {
-    margin-bottom: 15px;
-  }
+.experience-item {
+  margin-bottom: 15px;
+}
 
-  .experience-date {
-    font-size: medium;
-    font-weight: 200;
-  }
+.experience-date {
+  font-size: medium;
+  font-weight: 200;
+}
 
-  .experience-role {
-    font-weight: 600;
-  }
+.experience-role {
+  font-weight: 600;
+}
 
-  .experience-company {
-    font-weight: 500;
-    color: #5c5c5c;
-    display: block;
-  }
+.experience-company {
+  font-weight: 500;
+  color: #5c5c5c;
+  display: block;
+}
 
-  .experience-location {
-    float: right;
-    color: #979797;
-  }
+.experience-location {
+  float: right;
+  color: #979797;
+}
 
-  .experience-summary {
-    vertical-align: middle;
-    margin-top: 10px;
-    font-weight: 300;
-  }
+.experience-summary {
+  vertical-align: middle;
+  margin-top: 10px;
+  font-weight: 300;
+}
 
-  .experience-summary-row {
-    margin-left: 10px;
-    display: inline-block;
-    width: 90%;
-  }
+.experience-summary-row {
+  margin-left: 10px;
+  display: inline-block;
+  width: 90%;
+}
 
-  .academic {
-    margin-bottom: 20px;
-  }
+.academic {
+  margin-bottom: 20px;
+}
 
-  .academic-item {
-    margin-bottom: 25px;
-  }
+.academic-item {
+  margin-bottom: 25px;
+}
 
-  .academic-date {
-    font-size: medium;
-    font-weight: 200;
-  }
+.academic-date {
+  font-size: medium;
+  font-weight: 200;
+}
 
-  .academic-title {
-    font-weight: 600;
-  }
+.academic-title {
+  font-weight: 600;
+}
 
-  .academic-university {
-    font-weight: 300;
-    color: #5c5c5c;
-  }
+.academic-university {
+  font-weight: 300;
+  color: #5c5c5c;
+}
 
-  .academic-grade {
-    font-weight: 400;
-  }
+.academic-grade {
+  font-weight: 400;
+}
 
-  i.prog-icon {
-    font-size: 1em;
-    margin-right: 2px;
-  }
+span.experience-languages {
+  float: right;
+  margin-right: 25px;
+  border-right: 1px solid lightgray;
+  padding-right: 15px;
+  line-height: 2px;
+}
+
+a.download-resume {
+  float: right;
+}
+
+i.prog-icon {
+  font-size: 1em;
+  margin-right: 2px;
+}
+
+img.prog-icon {
+  font-size: 1em;
+  margin-right: 2px;
+  width: 1em;
+  display: inline-block;
+  margin-top: 8px;
+}
+
+img.icon-prometheus {
+  content:url('../images/logos/prometheus.svg');
+}
+
+img.icon-etcd {
+  content:url('../images/logos/etcd.svg');
+}
+
+img.icon-terraform {
+  content:url('../images/logos/terraform.svg');
+}
+
+img.icon-elastic {
+  content:url('../images/logos/elastic.svg');
+}
+
+img.icon-grpc {
+  content:url('../images/logos/grpc.svg');
+}
+
+img.icon-python {
+  content:url('../images/logos/python.svg');
+}
+
+img.icon-linux {
+  content:url('../images/logos/linux.svg');
+}

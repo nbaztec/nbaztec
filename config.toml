@@ -174,7 +174,7 @@ hide = true
 
 [[params.programming.1]]
 name = "Prometheus"
-image = "images/logos/prometheus.png"
+image = "images/logos/prometheus.svg"
 weight = 1
 
 
@@ -186,9 +186,5 @@ name = "About"
 weight = 1
 url = "about/"
 
-[[languages.en.menu.main]]
-name = "Resume"
-weight = 2
-url = "resume/"
 [languages.en.menu.main.params]
 newTarget = false

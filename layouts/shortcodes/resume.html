@@ -1,15 +1,22 @@
 {{ $pretty := not .Page.Params.layout_raw }}
 
+{{ if not $pretty }}
+<script defer>window.onload = () => setTimeout(window.print, 1000); </script>
+{{ end }}
+
 <section>
+    {{ if $pretty }}
+    <a href="/resume" target="_blank" class="fas fa-download download-resume"></a>
+    {{ end }}
     <div class="header">
         <div>
-            <img src="/images/me.jpg" />
+            <img class="profile" src="/images/me.jpg" />
             <div class="name">Nisheeth Barthwal</div>
             <div class="title">Senior Software Engineer</div>
         </div>
         <div class="h-row">
             <div class="h-col-1">
-                <div><i class="fas fa-phone-square-alt"></i> +49-15207119720</div>
+                <!--<div><i class="fas fa-phone-square-alt"></i> +49-15207119720</div>-->
                 <div><i class="far fa-envelope"></i> nbaztec@gmail.com</div>
                 <div><i class="fas fa-map-marker-alt"></i>&nbsp; Hamburg, Germany</div>
             </div>
@@ -41,23 +48,24 @@
                 <span class="skill-wrap {{ if $pretty }}big{{end}}"><span class="skill">{{ if $pretty }}<i class="devicon-csharp-plain colored prog-icon"></i>{{ end }}C#</span></span>
             </div>
             <div class="skill-soft-row">
-                <span class="skill-wrap {{ if $pretty }}big{{end}}"><span class="skill">{{ if $pretty }}<i class="devicon-python-plain colored prog-icon"></i>{{ end }}Python</span></span>
+                <span class="skill-wrap {{ if $pretty }}big{{end}}"><span class="skill">{{ if $pretty }}<img class="icon-python prog-icon" /></i>{{ end }}Python</span></span>
                 <span class="skill-wrap {{ if $pretty }}big{{end}}"><span class="skill">{{ if $pretty }}<i class="devicon-angularjs-plain colored prog-icon"></i>{{ end }}Angular</span></span>
             </div>
             <div class="skill-row-mt">
-                <span class="skill-wrap {{ if $pretty }}big{{end}}"><span class="skill">etcd</span></span>
-                <span class="skill-wrap {{ if $pretty }}big{{end}}"><span class="skill">Prometheus</span></span>
+                <span class="skill-wrap {{ if $pretty }}big{{end}}"><span class="skill">{{ if $pretty }}<img class="icon-etcd prog-icon" />{{ end }}etcd</span></span>
+                <span class="skill-wrap {{ if $pretty }}big{{end}}"><span class="skill">{{ if $pretty }}<img class="icon-prometheus prog-icon" />{{ end }}Prometheus</span></span>
                 <span class="skill-wrap {{ if $pretty }}big{{end}}"><span class="skill">{{ if $pretty }}<i class="devicon-postgresql-plain colored prog-icon"></i>{{ end }}Postgres</span></span>
-                <span class="skill-wrap {{ if $pretty }}big{{end}}"><span class="skill">Elasticsearch</span></span>
+                <span class="skill-wrap {{ if $pretty }}big{{end}}"><span class="skill">{{ if $pretty }}<img class="icon-elastic prog-icon" />{{ end }}Elasticsearch</span></span>
             </div>
             <div class="skill-soft-row">
                 <span class="skill-wrap {{ if $pretty }}big{{end}}"><span class="skill">{{ if $pretty }}<i class="devicon-redis-plain colored prog-icon"></i>{{ end }}Redis</span></span>
                 <span class="skill-wrap {{ if $pretty }}big{{end}}"><span class="skill">{{ if $pretty }}<i class="devicon-mongodb-plain colored prog-icon"></i>{{ end }}MongoDB</span></span>
+                <span class="skill-wrap {{ if $pretty }}big{{end}}"><span class="skill">{{ if $pretty }}<img class="icon-grpc prog-icon" />{{ end }}gRPC</span></span>
             </div>
             <div class="skill-row-mt">
                 <span class="skill-wrap {{ if $pretty }}big{{end}}"><span class="skill">{{ if $pretty }}<i class="devicon-kubernetes-plain colored prog-icon"></i>{{ end }}Kubernetes</span></span>
                 <span class="skill-wrap {{ if $pretty }}big{{end}}"><span class="skill">{{ if $pretty }}<i class="devicon-docker-plain colored prog-icon"></i>{{ end }}Docker</span></span>
-                <span class="skill-wrap {{ if $pretty }}big{{end}}"><span class="skill">Terraform</span></span>
+                <span class="skill-wrap {{ if $pretty }}big{{end}}"><span class="skill">{{ if $pretty }}<img class="icon-terraform prog-icon" />{{ end }}Terraform</span></span>
                 <span class="skill-wrap {{ if $pretty }}big{{end}}"><span class="skill">{{ if $pretty }}<i class="devicon-amazonwebservices-plain colored prog-icon"></i>{{ end }}AWS</span></span>
             </div>
         </div>
@@ -74,8 +82,22 @@
         <div class="col-2">
             <div>
                 <span class="experience-role">Cloud Native Software Engineer</span>
-                <span class="experience-company"><a href="https://moia.io">MOIA</a> <small
-                        class="experience-location">Hamburg, Germany</small></span>
+                <span class="experience-company">
+                    <a href="https://moia.io">MOIA</a>
+                    <small class="experience-location">Hamburg, Germany</small>
+                    {{ if $pretty }}
+                    <span class="experience-languages">
+                        <i class="devicon-go-original-wordmark colored prog-icon"></i>
+                        <i class="devicon-rust-plain colored prog-icon"></i>
+                        <img class="icon-etcd prog-icon" />
+                        <img class="icon-prometheus prog-icon" />
+                        <img class="icon-elastic prog-icon" />
+                        <img class="icon-grpc prog-icon" />
+                        <i class="devicon-kubernetes-plain colored prog-icon"></i>
+                        <i class="devicon-amazonwebservices-plain colored prog-icon"></i>
+                    </span>
+                    {{ end }}
+                </span>
             </div>
             <div class="experience-summary">
                 <div>
@@ -126,8 +148,21 @@
         <div class="col-2">
             <div>
                 <span class="experience-role">Senior Software Engineer</span>
-                <span class="experience-company"><a href="https://www.carnect.com/">Carnect</a> <small
-                        class="experience-location">Hamburg, Germany</small></span>
+                <span class="experience-company">
+                    <a href="https://www.carnect.com/">Carnect</a> 
+                    <small class="experience-location">Hamburg, Germany</small>
+                {{ if $pretty }}
+                <span class="experience-languages">
+                    <i class="devicon-nodejs-plain colored prog-icon"></i>
+                    <i class="devicon-csharp-plain colored prog-icon"></i>
+                    <i class="devicon-angularjs-plain colored prog-icon"></i>
+                    <i class="devicon-postgresql-plain colored prog-icon"></i>
+                    <i class="devicon-kubernetes-plain colored prog-icon"></i>
+                    <i class="devicon-docker-plain colored prog-icon"></i>
+                    <img class="icon-terraform prog-icon" />
+                </span>
+                {{ end }}
+                </span>
             </div>
             <div class="experience-summary">
                 <div>
@@ -168,9 +203,20 @@
         <div class="col-2">
             <div>
                 <span class="experience-role">Software Engineer</span>
-                <span class="experience-company"><a
-                        href="https://www.hermesworld.com/de/ueber-uns/hermes-gruppe/borderguru/">BorderGuru <small
-                            class="experience-location">Hamburg, Germany</small></a></span>
+                <span class="experience-company">
+                    <a href="https://www.hermesworld.com/de/ueber-uns/hermes-gruppe/borderguru/">BorderGuru</a>
+                    <small class="experience-location">Hamburg, Germany</small>
+                    {{ if $pretty }}
+                    <span class="experience-languages">
+                        <i class="devicon-nodejs-plain colored prog-icon"></i>
+                        <i class="devicon-angularjs-plain colored prog-icon"></i>
+                        <img class="icon-elastic prog-icon" />
+                        <i class="devicon-mongodb-plain colored prog-icon"></i>
+                        <i class="devicon-postgresql-plain colored prog-icon"></i>
+                        <i class="devicon-docker-plain colored prog-icon"></i>
+                    </span>
+                    {{ end }}
+                </span>
             </div>
             <div class="experience-summary">
                 <div>
@@ -202,8 +248,21 @@
         <div class="col-2">
             <div>
                 <span class="experience-role">Platform Engineer and Strategist</span>
-                <span class="experience-company"><a href="https://www.cloudaccess.net/">CloudAccess</a> <small
-                        class="experience-location">Remote (Poland/US)</small></span>
+                <span class="experience-company">
+                    <a href="https://www.cloudaccess.net/">CloudAccess</a> 
+                    <small class="experience-location">Remote (Poland/US)</small>
+                    {{ if $pretty }}
+                    <span class="experience-languages">
+                        <img class="icon-python prog-icon" />
+                        <i class="devicon-go-original-wordmark colored prog-icon"></i>
+                        <i class="devicon-nodejs-plain colored prog-icon"></i>
+                        <i class="devicon-angularjs-plain colored prog-icon"></i>
+                        <img class="icon-elastic prog-icon" />
+                        <i class="devicon-mongodb-plain colored prog-icon"></i>
+                        <i class="devicon-postgresql-plain colored prog-icon"></i>
+                    </span>
+                    {{ end }}
+                </span>
             </div>
             <div class="experience-summary">
                 <div>
@@ -237,8 +296,18 @@
         <div class="col-2">
             <div>
                 <span class="experience-role">Platform Engineer</span>
-                <span class="experience-company"><a href="https://www.cloudaccess.net/">CloudAccess</a> <small
-                        class="experience-location">Remote (Poland/US)</small></span>
+                <span class="experience-company">
+                    <a href="https://www.cloudaccess.net/">CloudAccess</a> 
+                    <small class="experience-location">Remote (Poland/US)</small>
+                    {{ if $pretty }}
+                    <span class="experience-languages">
+                        <img class="icon-python prog-icon" />
+                        <i class="devicon-php-plain colored prog-icon"></i>
+                        <i class="devicon-redis-plain colored prog-icon"></i>
+                        <i class="devicon-postgresql-plain colored prog-icon"></i>
+                    </span>
+                    {{ end }}
+                </span>
             </div>
             <div class="experience-summary">
                 <div>
@@ -275,8 +344,19 @@
         <div class="col-2">
             <div>
                 <span class="experience-role">Product Developer and Strategist</span>
-                <span class="experience-company"><a href="https://www.mediazo.com/">MediaZo</a> <small
-                        class="experience-location">India</small></span>
+                <span class="experience-company">
+                    <a href="https://www.mediazo.com/">MediaZo</a> 
+                    <small class="experience-location">India</small>
+                    {{ if $pretty }}
+                    <span class="experience-languages">
+                        <i class="devicon-php-plain colored prog-icon"></i>
+                        <i class="devicon-postgresql-plain colored prog-icon"></i>
+                        <i class="devicon-nodejs-plain colored prog-icon"></i>
+                        <i class="devicon-mongodb-plain colored prog-icon"></i>
+                        <img class="icon-linux prog-icon" />
+                    </span>
+                    {{ end }}
+                </span>
             </div>
             <div class="experience-summary">
                 <div>
