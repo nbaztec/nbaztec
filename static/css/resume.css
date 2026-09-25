@@ -2,7 +2,7 @@
 body {
   margin: 20px auto;
   font-family: 'Noto Sans JP', sans-serif;
-  width: 900px;
+  width: 1010px;
   min-height: 1000px;
   text-align: justify;
 }
@@ -44,19 +44,22 @@ img.profile {
 
 .col-1 {
   display: inline-block;
-  width: 29.3%;
+  /* width: 29.3%; */
+  width: 22.3%;
   font-size: large;
   font-weight: 700;
 }
 
 .col-2 {
   display: inline-block;
-  width: 69.3%;
+  /* width: 69.3%; */
+  width: 77.3%;
 }
 
 .col-2a {
   display: inline-block;
-  width: 59.3%;
+  /* width: 59.3%; */
+  width: 65.3%;
 }
 
 .col-2b {
@@ -133,7 +136,7 @@ img.profile {
 }
 
 .experience-item {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .experience-date {
@@ -200,6 +203,7 @@ span.experience-languages {
   border-right: 1px solid lightgray;
   padding-right: 15px;
   line-height: 2px;
+  min-height: 25px;
 }
 
 a.download-resume {

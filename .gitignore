@@ -1,3 +1,5 @@
 public/
 resources/
 *.lock
+# Local Netlify folder
+.netlify

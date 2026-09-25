@@ -1,4 +1,4 @@
-HUGO_BIN=hugo
+HUGO_BIN=./hugo
 
 .PHONY: build demo
 
