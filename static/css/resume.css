@@ -45,7 +45,8 @@ img.profile {
 .col-1 {
   display: inline-block;
   /* width: 29.3%; */
-  width: 22.3%;
+  /* width: 22.3%; */
+  width: 18.5%;
   font-size: large;
   font-weight: 700;
 }
@@ -59,13 +60,20 @@ img.profile {
 .col-2a {
   display: inline-block;
   /* width: 59.3%; */
-  width: 65.3%;
+  width: 45.3%;
+}
+
+.col-2c {
+  display: inline-block;
+  width: 60.3%;
+  /* width: 36.3%; */
 }
 
 .col-2b {
   display: inline-block;
-  width: 9.3%;
+  width: 39.3%;
   font-weight: 200;
+  font-size: medium;
 }
 
 .h-row {
@@ -131,6 +139,15 @@ img.profile {
   border-bottom: 0.5px dashed #21618C;
 }
 
+.interest-wrap {
+  width: 100px;
+  margin-right: 10px;
+  display: inline-block;
+}
+.interest-wrap.big {
+  width: 210px;
+}
+
 .experience {
   margin-bottom: 20px;
 }
@@ -168,7 +185,13 @@ img.profile {
 .experience-summary-row {
   margin-left: 10px;
   display: inline-block;
-  width: 90%;
+  /* width: 90%; */
+  width: 95%;
+}
+
+.foss-summary {
+  vertical-align: middle;
+  font-weight: 300;
 }
 
 .academic {

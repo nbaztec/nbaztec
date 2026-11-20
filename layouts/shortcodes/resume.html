@@ -10,7 +10,7 @@
     {{ end }}
     <div class="header">
         <div>
-            <img class="profile" src="/images/me.jpg" />
+            <!-- <img class="profile" src="/images/me.jpg" /> -->
             <div class="name">Nisheeth Barthwal</div>
             <div class="title">Principal Engineer</div>
         </div>
@@ -20,10 +20,10 @@
                 <div><i class="far fa-envelope"></i> nbaztec@gmail.com</div>
                 <div><i class="fas fa-map-marker-alt"></i>&nbsp; Hamburg, Germany</div>
             </div>
-            <div class="h-col-2">
+            <div class="h-col-2" style="margin-left: 300px;">
                 <div><i class="fab fa-github"></i> <a href="https://github.com/nbaztec">github.com/nbaztec</a></div>
                 <div><i class="fab fa-linkedin"></i> <a
-                        href="https://in.linkedin.com/in/nbaztec">in.linkedin.com/in/nbaztec</a></div>
+                        href="https://in.linkedin.com/in/nbaztec">linkedin.com/in/nbaztec</a></div>
             </div>
         </div>
     </div>
@@ -31,9 +31,8 @@
     <div>
         <div class="col-1">Profile</div>
         <div class="col-2">
-            Experienced Software Engineer and Open-Source contributor with focus on automation, quality and people. Proficient in various languages
-            and tools, with
-            the ability to self-manage on projects and swiftly pick up new technologies.
+            Software Engineer with 14+ years across distributed systems, developer tooling, and open source contributions. 
+            Leads cross-team technical work with primary focus on automation, quality, and people.
         </div>
     </div>
     <hr />
@@ -46,26 +45,51 @@
                 <span class="skill-wrap {{ if $pretty }}big{{end}}"><span class="skill">{{ if $pretty }}<i class="devicon-nodejs-plain colored prog-icon"></i>{{ end }}NodeJS</span></span>
                 <span class="skill-wrap {{ if $pretty }}big{{end}}"><span class="skill">{{ if $pretty }}<img class="icon-python prog-icon" /></i>{{ end }}Python</span></span>
             </div>
-            <div class="skill-soft-row">
-                <span class="skill-wrap {{ if $pretty }}big{{end}}"><span class="skill">{{ if $pretty }}<i class="devicon-csharp-plain colored prog-icon"></i>{{ end }}C#</span></span>
-                <span class="skill-wrap {{ if $pretty }}big{{end}}"><span class="skill">{{ if $pretty }}<i class="devicon-angularjs-plain colored prog-icon"></i>{{ end }}Angular</span></span>
-            </div>
             <div class="skill-row-mt">
                 <span class="skill-wrap {{ if $pretty }}big{{end}}"><span class="skill">{{ if $pretty }}<i class="devicon-postgresql-plain colored prog-icon"></i>{{ end }}Postgres</span></span>
+                <span class="skill-wrap {{ if $pretty }}big{{end}}"><span class="skill">{{ if $pretty }}<img class="icon-grpc prog-icon" />{{ end }}gRPC</span></span>
                 <span class="skill-wrap {{ if $pretty }}big{{end}}"><span class="skill">{{ if $pretty }}<img class="icon-etcd prog-icon" />{{ end }}etcd</span></span>
                 <span class="skill-wrap {{ if $pretty }}big{{end}}"><span class="skill">{{ if $pretty }}<img class="icon-prometheus prog-icon" />{{ end }}Prometheus</span></span>
                 <span class="skill-wrap {{ if $pretty }}big{{end}}"><span class="skill">{{ if $pretty }}<img class="icon-elastic prog-icon" />{{ end }}Elasticsearch</span></span>
             </div>
-            <div class="skill-soft-row">
+            <!-- <div class="skill-soft-row">
                 <span class="skill-wrap {{ if $pretty }}big{{end}}"><span class="skill">{{ if $pretty }}<i class="devicon-redis-plain colored prog-icon"></i>{{ end }}Redis</span></span>
                 <span class="skill-wrap {{ if $pretty }}big{{end}}"><span class="skill">{{ if $pretty }}<i class="devicon-mongodb-plain colored prog-icon"></i>{{ end }}MongoDB</span></span>
-                <span class="skill-wrap {{ if $pretty }}big{{end}}"><span class="skill">{{ if $pretty }}<img class="icon-grpc prog-icon" />{{ end }}gRPC</span></span>
-            </div>
+                
+            </div> -->
             <div class="skill-row-mt">
                 <span class="skill-wrap {{ if $pretty }}big{{end}}"><span class="skill">{{ if $pretty }}<i class="devicon-kubernetes-plain colored prog-icon"></i>{{ end }}Kubernetes</span></span>
                 <span class="skill-wrap {{ if $pretty }}big{{end}}"><span class="skill">{{ if $pretty }}<i class="devicon-docker-plain colored prog-icon"></i>{{ end }}Docker</span></span>
                 <span class="skill-wrap {{ if $pretty }}big{{end}}"><span class="skill">{{ if $pretty }}<img class="icon-terraform prog-icon" />{{ end }}Terraform</span></span>
                 <span class="skill-wrap {{ if $pretty }}big{{end}}"><span class="skill">{{ if $pretty }}<i class="devicon-amazonwebservices-plain colored prog-icon"></i>{{ end }}AWS</span></span>
+            </div>
+        </div>
+    </div>
+    <div style="margin-top: 20px;">
+        <div class="col-1">Interests</div>
+        <div class="col-2">
+            <div class="skill-row">
+                <span class="interest-wrap big"><span class="skill">Arduino / ESP32</span></span>
+                <span class="interest-wrap big"><span class="skill">Technical Writing</span></span>
+            </div>
+        </div>
+    </div>
+    <div style="margin-top: 20px;">
+        <div class="col-1">Open Source</div>
+        <div class="col-2">
+            <div class="foss-summary">
+                <div>
+                    <span>&dot;</span>
+                    <div class="experience-summary-row">
+                        Patches to .NET Core, Docker, Terraform, sqlx, rusoto, grpc-rust, testify, Serilog and more.
+                    </div>
+                </div>
+                <div>
+                    <span>&dot;</span>
+                    <div class="experience-summary-row">
+                        Published a Kotlin code-coverage plugin and a .NET Core permissions library.
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -97,27 +121,32 @@
             <div class="experience-summary">
                 <div>
                     <span>&dot;</span>
-                    <div class="experience-summary-row"><em>Lead</em> and mentor multiple teams of upto four engineers</div>
+                    <div class="experience-summary-row">
+                        Led foundry-zksync, a <em>Rust</em> <em>testing/simulation suite</em> allowing external teams to run existing EVM test suites on the architecturally different zkEVM; oversaw <em>multiple squads</em> of engineers.
+                    </div>
                 </div>
                 <div>
                     <span>&dot;</span>
-                    <div class="experience-summary-row">Develop <em>user-facing</em> <em>test</em> and <em>simulation</em> tools for blockchain VMs in <em>Rust</em></div>
+                    <div class="experience-summary-row">
+                        Resolved ambiguous <em>low-level VM</em> bugs (opcodes, registers, execution) across internal and external teams; reported hashing and logic-related <em>CVEs</em> to external projects.
+                    </div>
                 </div>
                 <div>
                     <span>&dot;</span>
-                    <div class="experience-summary-row">Investigate and debug <em>low-level VM</em> opcodes, registers, etc. in Rust</div>
+                    <div class="experience-summary-row">Built <em>x402</em> agentic payment support on the SolanaVM in Rust for on-chain settlement.</div>
+                </div>
+                
+                <div>
+                    <span>&dot;</span>
+                    <div class="experience-summary-row">Prototyped <em>LangGraph</em>-based <em>agentic</em> pipelines for automating the SDLC.</div>
                 </div>
                 <div>
                     <span>&dot;</span>
-                    <div class="experience-summary-row">Evaluate <em>agentic</em> AI-frameworks like <em>LangGraph</em> for internal pipelines</div>
+                    <div class="experience-summary-row">Scoped several external <em>client requirements</em> into deliverable solutions for decentralized finance.</div>
                 </div>
                 <div>
                     <span>&dot;</span>
-                    <div class="experience-summary-row">Assist in <em>scoping</em> and <em>evaluating</em> client requirements into potential solutions</div>
-                </div>
-                <div>
-                    <span>&dot;</span>
-                    <div class="experience-summary-row">Contribute to Rust <em>open source</em> projects and libraries</div>
+                    <div class="experience-summary-row">Drove <em>organization-wide</em> performance evaluation framework and ran a technical writing club.</div>
                 </div>
             </div>
         </div>
@@ -145,15 +174,19 @@
             <div class="experience-summary">
                 <div>
                     <span>&dot;</span>
-                    <div class="experience-summary-row"><em>Blockchain</em> development for the Polkadot parachain, <em>Moonbeam</em> in <em>Rust</em></div>
+                    <div class="experience-summary-row">Developed Moonbeam parachain in <em>Rust</em>, allowing users to run EVM programs in Polkadot ecosystem.</div>
                 </div>
                 <div>
                     <span>&dot;</span>
-                    <div class="experience-summary-row">Assist in <em>testing</em> and <em>benchmarking</em> the on-chain runtime in <em>Typescript</em></div>
+                    <div class="experience-summary-row">Owned staking, rewards, and randomness-centric features for a BFT-consensus network, focusing on <em>correctness</em> and performance.</div>
                 </div>
                 <div>
                     <span>&dot;</span>
-                    <div class="experience-summary-row">Contribute to Go and Rust <em>open source</em> projects and libraries</div>
+                    <div class="experience-summary-row">Built SQLite indexer for <em>read-heavy</em> RPC nodes bringing down latencies to <em>sub-milliseconds</em>.</div>
+                </div>
+                <div>
+                    <span>&dot;</span>
+                    <div class="experience-summary-row">Built custom-VM <em>benchmarking harness</em> adopted across teams to guide data structure optimizations.</div>
                 </div>
             </div>
         </div>
@@ -185,35 +218,30 @@
             <div class="experience-summary">
                 <div>
                     <span>&dot;</span>
-                    <div class="experience-summary-row"><em>Optimize</em> fleet routes on distributed, highly available
-                        <em>Go</em> and <em>Rust</em> components in ride-sharing domain
+                    <div class="experience-summary-row">Initiated <em>cross-team working groups</em> for <em>Protobuf</em>, <em>gRPC</em>, and <em>OpenTelemetry</em>;
+                        published a Kotlin coverage plugin adopted across teams.
                     </div>
                 </div>
                 <div>
                     <span>&dot;</span>
-                    <div class="experience-summary-row">Facilitate <em>inter-team</em> architecture designs and follow-up
-                        implementations, like <em>Protobuf</em>, <em>gRPC</em>, and <em>etcd</em> leader consensus</div>
-                </div>
-                <div>
-                    <span>&dot;</span>
-                    <div class="experience-summary-row">Automate test and deployment pipelines on <em>Github
-                            Actions</em> and <em>Kubernetes</em></div>
-                </div>
-                <div>
-                    <span>&dot;</span>
-                    <div class="experience-summary-row">Manage Observability stack on <em>Prometheus</em>,
-                        <em>Grafana</em> and <em>Kibana</em>
+                    <div class="experience-summary-row">
+                        Developed a highly available <em>distributed system</em> in <em>Go</em> and <em>Rust</em> to match users to a dynamic ride-sharing fleet across multiple cities.
                     </div>
                 </div>
                 <div>
                     <span>&dot;</span>
-                    <div class="experience-summary-row"><em>Mentor</em> junior developers on sound engineering
-                        principles and assist team in harboring active <em>conflict resolution</em> strategies</div>
+                    <div class="experience-summary-row">Built <em>etcd</em>-based <em>distributed state machine</em> on the critical path 
+                        reducing the average error rate from <em>~20 to under 2 per week</em>.</div>
                 </div>
                 <div>
                     <span>&dot;</span>
-                    <div class="experience-summary-row">Contribute to Go, Rust and Kotlin <em>open source</em> plugins
-                        and libraries</div>
+                    <div class="experience-summary-row">Worked with Operations Research experts on <em>LocalSearch optimizations</em> under conflicting rider, driver and operations constraints;
+                        made the results explainable to customer operations.
+                    </div>
+                </div>
+                <div>
+                    <span>&dot;</span>
+                    <div class="experience-summary-row">Mentored engineers; coached the team on positive communication and <em>conflict resolution</em> strategies.</div>
                 </div>
             </div>
         </div>
@@ -244,31 +272,14 @@
             <div class="experience-summary">
                 <div>
                     <span>&dot;</span>
-                    <div class="experience-summary-row">Migrate B2B monolith to microservice architecture using
-                        <em>NodeJS</em> and <em>.NET Core / C#</em> in Car Rental industry
+                    <div class="experience-summary-row">Migrated car rental B2B monolith to
+                        <em>NodeJS</em> and <em>.NET Core / C#</em> microservices.
                     </div>
                 </div>
                 <div>
                     <span>&dot;</span>
-                    <div class="experience-summary-row">Participate in architecture design and CI/CD pipelines
-                        (<em>Teamcity</em>)</div>
-                </div>
-                <div>
-                    <span>&dot;</span>
-                    <div class="experience-summary-row">Setup <em>Kubernetes</em> cluster on AWS with infra team via
-                        <em>Terraform</em>
+                    <div class="experience-summary-row">Mentored infra team in building in-house <em>Kubernetes</em> cluster on AWS with <em>Terraform</em>, and front-end team with user-portal migration to <em>Angular</em>.
                     </div>
-                </div>
-                <div>
-                    <span>&dot;</span>
-                    <div class="experience-summary-row">Lead internal projects and mentor front-end team on
-                        <em>Angular</em>
-                    </div>
-                </div>
-                <div>
-                    <span>&dot;</span>
-                    <div class="experience-summary-row">Contribute to .NET Core, Docker and Terraform <em>open
-                            source</em> repositories</div>
                 </div>
             </div>
         </div>
@@ -298,22 +309,15 @@
             <div class="experience-summary">
                 <div>
                     <span>&dot;</span>
-                    <div class="experience-summary-row">Develop REST APIs in <em>NodeJS</em> in Logistics domain</div>
+                    <div class="experience-summary-row">Developed <em>NodeJS</em>/<em>MongoDB</em> microservices in logistics and payments domains.</div>
                 </div>
                 <div>
                     <span>&dot;</span>
-                    <div class="experience-summary-row">Participate in <em>architecture design</em> and <em>test</em>
-                        automation/coverage</div>
+                    <div class="experience-summary-row">Built internal <em>Selenium</em> and <em>Elasticsearch</em> project for data crawling for market analysis.</div>
                 </div>
                 <div>
                     <span>&dot;</span>
-                    <div class="experience-summary-row">Develop internal <em>Selenium</em> and <em>Elasticsearch</em>
-                        project for data crawling</div>
-                </div>
-                <div>
-                    <span>&dot;</span>
-                    <div class="experience-summary-row">Participate in interview and <em>hiring</em> process and mentor
-                        junior team members</div>
+                    <div class="experience-summary-row"><em>Mentored</em> junior team members on best practices in code and testing.</div>
                 </div>
             </div>
         </div>
@@ -324,7 +328,7 @@
         </div>
         <div class="col-2">
             <div>
-                <span class="experience-role">Platform Engineer and Strategist</span>
+                <span class="experience-role">Senior Platform Engineer</span>
                 <span class="experience-company">
                     <a href="https://www.cloudaccess.net/">CloudAccess</a> 
                     <small class="experience-location">Remote, Poland/US</small>
@@ -344,23 +348,15 @@
             <div class="experience-summary">
                 <div>
                     <span>&dot;</span>
-                    <div class="experience-summary-row">Develop multiple internal tools
-                        in <em>NodeJS</em>, <em>Go</em> and <em>ReactJS</em> in PaaS domain</div>
+                    <div class="experience-summary-row">Led a team of 3 engineers to stabilize the core <em>Python</em> PaaS daemon 
+                    and migrate key paths to <em>Go</em> microservices serving 5000+ managed customer websites.</div>
                 </div>
-                <div>
+                 <div>
                     <span>&dot;</span>
-                    <div class="experience-summary-row">Improve log search performance in legacy MySQL database via
-                        <em>Elasticsearch</em>
+                    <div class="experience-summary-row">Built a <em>Go</em> mass-mailing tool for operations, cutting turnaround time from 5+ hours to under 3 minutes.
                     </div>
                 </div>
-                <div>
-                    <span>&dot;</span>
-                    <div class="experience-summary-row">Manage a team of three engineers, inter-team cooperation</div>
-                </div>
-                <div>
-                    <span>&dot;</span>
-                    <div class="experience-summary-row">Active Participation in stategic management decisions</div>
-                </div>
+                
             </div>
         </div>
     </div>
@@ -387,26 +383,21 @@
             <div class="experience-summary">
                 <div>
                     <span>&dot;</span>
-                    <div class="experience-summary-row">Develop, refactor and maintain core platform <em>Python</em>
-                        service in PaaS domain and secure websocket communication with OAuth2 and SSL/TLS </div>
+                    <div class="experience-summary-row">Developed
+                        PaaS daemon in <em>Python</em> (<em>WebSocket</em>) and <em>PHP</em> contributing features
+                        like faster downtime notifications and page-load analytics.</div>
                 </div>
                 <div>
                     <span>&dot;</span>
                     <div class="experience-summary-row">
-                        Develop minimal <em>PHP</em> MVC framework for proprietary control panel,
-                        <em>phantomJS</em> page-load analysis, downtime notifications via
-                        <em>Redis</em> and <em>nginx</em>
+                        Moved support log search from MySQL to <em>Elasticsearch</em>, reducing query latency from seconds to milliseconds.
                     </div>
                 </div>
-                <div>
+                 <div>
                     <span>&dot;</span>
-                    <div class="experience-summary-row">Build <em>automation</em> tools for CMS deployments (Joomla! and
-                        Wordpress)</div>
-                </div>
-                <div>
-                    <span>&dot;</span>
-                    <div class="experience-summary-row">Participate in strategic feature
-                        planning with the Operations team</div>
+                    <div class="experience-summary-row">
+                        Built internal management dashboards in <em>NodeJS / React</em> for pricing, capacity, and product decisions.
+                    </div>
                 </div>
             </div>
         </div>
@@ -436,21 +427,8 @@
                 <div>
                     <span>&dot;</span>
                     <div class="experience-summary-row">
-                        Develop B2B online reputation manager with <em>PHP</em>, <em>Javascript</em> and
-                        <em>MongoDB</em> for managing
-                        social media interactions on Facebook, Twitter and LinkedIn
-                    </div>
-                </div>
-                <div>
-                    <span>&dot;</span>
-                    <div class="experience-summary-row">
-                        Manage Linux servers and third-party payment gateway
-                        integrations
-                    </div>
-                </div>
-                <div>
-                    <span>&dot;</span>
-                    <div class="experience-summary-row">Develop and maintain internal projects on AGILE methodologies
+                        Led development of B2B social media brand reputation manager with <em>PHP</em>, <em>JavaScript</em> and
+                        <em>MongoDB</em> used by 50+ brand managers.
                     </div>
                 </div>
             </div>
@@ -458,17 +436,16 @@
     </div>
     <hr />
     <div class="academic">
-        <div class="col-1">Academic Profile</div>
+        <div class="col-1">Education</div>
         <div class="col-2"></div>
     </div>
     <div class="academic-item">
-        <div class="col-1 academic-date">2009 - 2013</div>
-        <div class="col-2a">
-            <div class="academic-title">Bachelor of Technology (Computer Science)</div>
-            <div class="academic-university">Guru Gobind Singh Indraprastha University, India</div>
+        <div class="col-1 academic-date">2013</div>
+        <div class="col-2a" style="width: 35%;">
+            <div class="academic-title">B.Tech, Computer Science</div>
         </div>
-        <div class="col-2b academic-grade">
-            83.90%
+        <div class="col-2a" style="width: 38%;font-size: medium;">
+            <div class="academic-university">Guru Gobind Singh Indraprastha University, India</div>
         </div>
     </div>
 </section>
